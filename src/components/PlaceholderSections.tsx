@@ -21,15 +21,15 @@ const PlaceholderSections = () => {
             <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Club Calendar</h3>
             <div className="flex justify-center">
               <div className="w-full max-w-4xl overflow-hidden rounded-lg shadow-md">
-                <iframe 
-                  src="https://calendar.google.com/calendar/u/0/embed?src=2230e4d8d7fc64050295a1a34ea42d2f3cd4a4130a02eb4695773e63f5b2880c@group.calendar.google.com&ctz=America/New_York" 
-                  style={{border: 0}} 
-                  width="100%" 
-                  height="600" 
-                  frameBorder="0" 
+                <iframe
+                  src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&mode=AGENDA&title=Stars%20Research%20Corp&src=MjIzMGU0ZDhkN2ZjNjQwNTAyOTVhMWEzNGVhNDJkMmYzY2Q0YTQxMzBhMDJlYjQ2OTU3NzNlNjNmNWIyODgwY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237986cb"
+                  // style={{ border: 'solid 1px #777' }}
+                  width="130%"
+                  height="700"
+                  frameBorder={0}
                   scrolling="no"
-                  className="w-full"
-                ></iframe>
+                  title="Stars Research Corp Calendar"
+                />
               </div>
             </div>
           </div>
