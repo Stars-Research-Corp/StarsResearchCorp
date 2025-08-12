@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { Menu, X, Star, Code } from 'lucide-react';
-import logo from '/logo-footer-logo.png'
+import React, { useState } from "react";
+import { Menu, X, Star, Code } from "lucide-react";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
       });
     }
     setIsMenuOpen(false); // Close mobile menu after clicking
@@ -24,24 +24,64 @@ const Header = () => {
             <div className="relative flex items-center w-fit">
               {/* <Star className="w-8 h-8 text-blue-600 fill-current" />
               <Code className="w-4 h-4 text-purple-600 absolute -bottom-1 -right-1" /> */}
-              <img src={logo} className="h-8 w-auto" />
+              <img
+                src="/StarsResearchCorp/logo-footer-logo.png"
+                className="h-8 w-auto"
+                alt="Logo"
+              />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900">STARS Research Corp</h1>
+              <h1 className="text-xl font-bold text-gray-900">
+                STARS Research Corp
+              </h1>
               <p className="text-sm text-gray-600">Johns Creek High School</p>
             </div>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Home</button>
-            <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">About</button>
-            <button onClick={() => scrollToSection('events')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Events</button>
-            <button onClick={() => scrollToSection('projects')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Projects</button>
-            <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</button>
-            <button onClick={() => scrollToSection('join')} className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 font-semibold">
+            <Link
+              to="/StarsResearchCorp/"
+              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+            >
+              Home
+            </Link>
+            <Link
+              to="/StarsResearchCorp/#about"
+              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+            >
+              About
+            </Link>
+            <Link
+              to="/StarsResearchCorp/#events"
+              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+            >
+              Events
+            </Link>
+            <Link
+              to="/StarsResearchCorp/#projects"
+              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+            >
+              Projects
+            </Link>
+            <Link
+              to="/StarsResearchCorp/#contact"
+              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+            >
+              Contact
+            </Link>
+            <Link
+              to="/StarsResearchCorp/officer-team"
+              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+            >
+              Officer team
+            </Link>
+            <Link
+              to="/StarsResearchCorp/#join"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 font-semibold"
+            >
               Join Now
-            </button>
+            </Link>
           </nav>
 
           {/* Mobile menu button */}
@@ -49,7 +89,11 @@ const Header = () => {
             className="md:hidden p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
@@ -57,14 +101,55 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4">
-              <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-left">Home</button>
-              <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-left">About</button>
-              <button onClick={() => scrollToSection('events')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-left">Events</button>
-              <button onClick={() => scrollToSection('projects')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-left">Projects</button>
-              <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-left">Contact</button>
-              <button onClick={() => scrollToSection('join')} className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 font-semibold w-fit">
+              <Link
+                to="/StarsResearchCorp/"
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-left"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
+                to="/StarsResearchCorp/#about"
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-left"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </Link>
+              <Link
+                to="/StarsResearchCorp/#events"
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-left"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Events
+              </Link>
+              <Link
+                to="/StarsResearchCorp/#projects"
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-left"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Projects
+              </Link>
+              <Link
+                to="/StarsResearchCorp/#contact"
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-left"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </Link>
+              <Link
+                to="/StarsResearchCorp/officer-team"
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-left"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Officer team
+              </Link>
+              <Link
+                to="/StarsResearchCorp/#join"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 font-semibold w-fit"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Join Now
-              </button>
+              </Link>
             </div>
           </div>
         )}

@@ -1,6 +1,5 @@
-import React from 'react';
-import { Star, Code, Heart } from 'lucide-react';
-import logo from '/logo-footer-logo.png'
+import React from "react";
+import { Star, Code, Heart } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -15,8 +14,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
-              Empowering students to explore, create, and innovate in the world of technology 
-              and computer science.
+              Empowering students to explore, create, and innovate in the world
+              of technology and computer science.
             </p>
           </div>
 
@@ -24,11 +23,46 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#home" className="text-gray-300 hover:text-blue-400 transition-colors">Home</a></li>
-              <li><a href="#about" className="text-gray-300 hover:text-blue-400 transition-colors">About</a></li>
-              <li><a href="#events" className="text-gray-300 hover:text-blue-400 transition-colors">Events</a></li>
-              <li><a href="#projects" className="text-gray-300 hover:text-blue-400 transition-colors">Projects</a></li>
-              <li><a href="#contact" className="text-gray-300 hover:text-blue-400 transition-colors">Contact</a></li>
+              <li>
+                <a
+                  href="#home"
+                  className="text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  className="text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#events"
+                  className="text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  Events
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  className="text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  className="text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
 
