@@ -55,7 +55,7 @@ const PlaceholderSections = () => {
             <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="mb-4">
                 <img
-                  src="/Mediapipe.png"
+                  src="Mediapipe.png"
                   alt="Mediapipe Body Movement Tracking"
                   className="w-full h-48 object-cover rounded-lg"
                 />
@@ -79,7 +79,7 @@ const PlaceholderSections = () => {
             <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="mb-4">
                 <img
-                  src="/MLProject.png"
+                  src="MLProject.png"
                   className="w-full h-48 object-cover rounded-lg"
                 />
               </div>
@@ -103,7 +103,7 @@ const PlaceholderSections = () => {
             <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="mb-4">
                 <img
-                  src="/starsresearch2025-1.png"
+                  src="starsresearch2025-1.png"
                   className="w-full h-48 object-cover rounded-lg"
                 />
               </div>
@@ -125,7 +125,7 @@ const PlaceholderSections = () => {
             <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="mb-4">
                 <img
-                  src="/INFORMS.png"
+                  src="INFORMS.png"
                   className="w-full h-48 object-cover rounded-lg"
                 />
               </div>
@@ -149,7 +149,7 @@ const PlaceholderSections = () => {
             <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="mb-4">
                 <img
-                  src="/starsresearch2024-1.png"
+                  src="starsresearch2024-1.png"
                   className="w-full h-48 object-cover rounded-lg"
                 />
               </div>
@@ -175,7 +175,7 @@ const PlaceholderSections = () => {
             <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="mb-4">
                 <img
-                  src="/FaceML.png"
+                  src="FaceML.png"
                   className="w-full h-48 object-cover rounded-lg"
                 />
               </div>
